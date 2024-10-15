@@ -92,6 +92,7 @@ h5 {
     font-family: 'Anton', sans-serif;
     letter-spacing: 1.5px;
     line-height: 1.6;
+    text-align: center;
 }
 main {
     padding: 40px 20px;
@@ -99,6 +100,8 @@ main {
     flex-wrap: wrap;
     justify-content: space-around;
 }
+
+
 
 section {
     background-color: white;
@@ -184,6 +187,14 @@ footer a:hover {
     padding: 20px;
 }
 
+.carouselauto1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    text-align: center;
+}
+
+
 /* Responsive mobile*/
 
 @media (max-width: 500px){
@@ -197,8 +208,15 @@ footer a:hover {
         align-content: center;
         
     }
+    .carouselauto1 {
+        flex-direction: column;
+    }
     section {
         width: 95%;
+    }
+    .sobrenosotros {
+        height: auto;
+        padding: 2%;
     }
 
 }
@@ -209,6 +227,7 @@ footer a:hover {
 @media (min-width: 501px) and (max-width: 950px){
 
 }
+
 
 
 
