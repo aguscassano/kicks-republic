@@ -1,0 +1,13 @@
+.borde-form:focus {
+    border-color: $naranja;
+    box-shadow: 0 0 0 0.25rem rgba(255, 86, 34, 0.7);
+    outline: none;
+}
+
+.contenedor-contacto {
+    width: 100%;
+    .contacto {
+        @extend .sobrenosotros;
+    }
+    
+}

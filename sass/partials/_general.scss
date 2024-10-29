@@ -1,0 +1,21 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Archivo Black', sans-serif;
+    background-color: #f4f4f4;
+    color: $gris-o;
+    line-height: 1.6;
+    h1, h2{
+        font-family: 'Anton', sans-serif;
+        letter-spacing: 1.5px;
+    }
+
+    img {
+        max-width: 100%;
+        height: auto;
+        display: block;
+    }
+}

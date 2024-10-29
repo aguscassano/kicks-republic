@@ -1,0 +1,17 @@
+main {
+    .carouselauto1 {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        text-align: center;
+    }
+    div {
+        h5 {
+            color: $negro;
+            font-family: 'Anton', sans-serif;
+            letter-spacing: 1.5px;
+            line-height: 1.6;
+            text-align: center;
+        }
+    }
+}

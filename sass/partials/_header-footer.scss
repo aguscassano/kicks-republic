@@ -1,0 +1,40 @@
+// Header
+header {
+    background-color: $negro;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    .bg-color {
+        background-color: $negro;
+        a{
+            color: white;
+        }
+        a:hover{
+            color: $naranja;
+        }
+        
+    }
+    .navbar .nav-link.active {
+        color: $naranja;
+    }
+}
+
+
+// Footer
+footer {
+    background-color: $negro;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    p {
+        margin-bottom: 10px;
+    }
+    a {
+        color: white;
+        margin: 0 10px;
+        text-decoration: none;
+    }
+    a:hover {
+        color: $naranja; 
+    }
+}
