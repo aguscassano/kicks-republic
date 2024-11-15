@@ -18,6 +18,7 @@ body img {
   max-width: 100%;
   height: auto;
   display: block;
+  object-fit: cover;
 }
 
 header {
@@ -31,9 +32,11 @@ header .bg-color {
 }
 header .bg-color a {
   color: white;
+  transition: transform 0.2s ease, color 0.2s ease;
 }
 header .bg-color a:hover {
   color: #ff5733;
+  transform: scale(1.1);
 }
 header .navbar .nav-link.active {
   color: #ff5733;
@@ -55,20 +58,6 @@ footer a {
 }
 footer a:hover {
   color: #ff5733;
-}
-
-main .carouselauto1 {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  text-align: center;
-}
-main div h5 {
-  color: #111;
-  font-family: "Anton", sans-serif;
-  letter-spacing: 1.5px;
-  line-height: 1.6;
-  text-align: center;
 }
 
 main {
@@ -127,10 +116,40 @@ main .img-container:hover img {
 .contenedor-contacto {
   width: 100%;
 }
+main .carouselauto1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  text-align: center;
+  overflow: hidden;
+}
+main div h5 {
+  color: #111;
+  font-family: "Anton", sans-serif;
+  letter-spacing: 1.5px;
+  line-height: 1.6;
+  text-align: center;
+}
+
+.locales {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+}
+.locales > div {
+  flex: 1;
+  margin: 0 10px;
+}
+
 @media (max-width: 500px) {
   header {
     flex-direction: row;
     align-items: center;
+  }
+  header .boton {
+    background-color: #666;
   }
   main {
     display: flex;
@@ -142,6 +161,51 @@ main .img-container:hover img {
   }
   main section {
     width: 95%;
+  }
+  main .locales {
+    flex-direction: column;
+  }
+  main .mapa {
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+  }
+  main .mapa iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+  }
+  .sobrenosotros, .contenedor-contacto .contacto {
+    height: auto;
+    padding: 2%;
+  }
+}
+@media (min-width: 501px) and (max-width: 950px) {
+  header {
+    flex-direction: row;
+    align-items: center;
+  }
+  header .boton {
+    background-color: #666;
+  }
+  main {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+  }
+  main .carouselauto1 {
+    flex-direction: column;
+  }
+  main section {
+    width: 95%;
+  }
+  main .locales {
+    flex-direction: column;
   }
   main .mapa {
     position: relative;

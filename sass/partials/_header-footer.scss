@@ -8,9 +8,11 @@ header {
         background-color: $negro;
         a{
             color: white;
+            transition: transform 0.2s ease, color 0.2s ease;
         }
         a:hover{
             color: $naranja;
+            transform: scale(1.1);
         }
         
     }

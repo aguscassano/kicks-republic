@@ -4,6 +4,8 @@ main {
         flex-direction: row;
         justify-content: space-around;
         text-align: center;
+        overflow: hidden;
+
     }
     div {
         h5 {
@@ -13,5 +15,8 @@ main {
             line-height: 1.6;
             text-align: center;
         }
+
+
     }
+
 }
